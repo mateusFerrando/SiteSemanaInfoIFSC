@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Semana informatica">
+    <meta name="Autores" content=Mateus e Lucas>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Semana da informática IFSC GASPAR</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+</head>
+<body>
+    <!-- jQuery (obrigatório para plugins JavaScript do Bootstrap) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Inclui todos os plugins compilados (abaixo), ou inclua arquivos separadados se necessário -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <header>
+        <div class="row">
+            <div class="navbar-fixed-top topo">
+                <div class="col-md-12">
+                <h1 class="col-md-12" style="text-align: center">
+                    <img src="https://bit.ly/2xHkZP3" height="50px" class="logo-si" alt="logo do SI"/>
+                    <span>VI SEMANA DA INFORMÁTICA</span>
+                </h1>
+            </div>
+                <ul class="col-md-12 menu center-badge">
+                <li class="col-md-2"><a onclick="rolar_para('#inicio')"> Início</a></li>
+                <li class="col-md-2"><a onclick="rolar_para('#div_palestrantes')"> Palestrantes</a></li>
+                <li class="col-md-2"><a onclick="rolar_para('#div_programacao')"> Programação</a></li>
+                <li class="col-md-2"><a onclick="rolar_para('#div_local')"> Local</a></li>
+                <li class="col-md-2"><a onclick="rolar_para('#div_galeria')">Fotos</a></li>
+            </ul>
+            </div>
+        </div>
+    </header>  
+    <section>
+        <div class="row">
+            <div class="home col-md-12 no-pd center-badge" id="inicio">
+                <div class="col-md-8 col-sm-5" style="text-align: center">
+                    <div class="efeito-texto-1 mytext1 col-md-12">VI SEMANA DA INFORMÁTICA</div>
+                    <span class="efeito-texto-2 mytext2">23 a 26 de Outubro Inscreva-se <a href="https://limesurvey.ifsc.edu.br/index.php/477826?lang=pt-BR " target="_blank">aqui</a></span>
+                </div>
+            </div>
+
+            <div class="palestrantes col-md-12 no-pd" id="div_palestrantes" style="padding-bottom: 20px">
+                <div class="header-palestrantes col-md-12 no-pd" style="margin-top:20px;">
+                    <h1> Palestrantes </h1>
+                </div>
+                <div style="width: 80%; margin: auto">
+                    <div class="body-palestrantes col-md-12" >
+
+                        <div class="card-palestrantes col-md-5" onclick="info('curriculo_armando')">
+                            <img src="img/armando_leite.jpg" class="col-md-3 img-responsive"/>
+                            <div class="col-md-9 nome-palestrante no-pd">
+                                <strong class="col-md-12 ">Armando Leite</strong>
+                                <span class="col-md-12 text-muted truncatepd">Co-Founder & CEO At Trezo</span>
+                                <div class="col-md-12" style="padding-top:5px;padding-bottom: 5px">
+                                    <span class="col-md-12 no-pd" id="info_curriculo_armando" style="display: none;">Profissional certificado em AWS e Segurança de Dados, atuando a 12 anos com TI, mais precisamente com Infraestrutura e Desenvolvimento Web. Desde 2009 CEO da Trezo, empresa do segmento de TI voltado a e-commerce através do framework Magento, sendo Partner Magento no Brasil e considerada uma das 3 maiores empresas neste segmento pela própria Magento.</span>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        
+                        <div class="card-palestrantes col-md-5" onclick="info('curriculo_daniel')">
+                            <img src="img/daniel_l.jpg" class="col-md-3 img-responsive"/>
+                            <div class="col-md-9 nome-palestrante no-pd">
+                                <strong class="col-md-12 ">Daniel Theisges</strong>
+                                <span class="col-md-12 text-muted truncatepd">Researcher at Senior Sistemas</span>
+                                <div class="col-md-12" style="padding-top:5px;padding-bottom: 5px">
+                                    <span class="col-md-12 no-pd" id="info_curriculo_daniel" style="display: none;">Daniel Theisges atou como professor de Visão Computacional, Inteligência Artificial, Aprendizado de Máquina e Sistemas Distribuídos na Universidade Regional de Blumenau (FURB). Possui mestrado em Computação Aplicada na Universidade Federal de Santa Catarina. Daniel é também aluno de doutorado na UFSC e pesquisador da SENIOR SISTEMAS, uma das maiores empresas de software do Brasil. Com mais de 10 anos de experiência em pesquisa e desenvolvimento de software, Daniel tem contribuído para vários projetos envolvendo inteligência artificial e análise de dados. Recentemente, se juntou ao Intel AI Student Ambassador Program para aprimorar e compartilhar o conhecimento da IA em todo o mundo.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="programacao col-md-12 no-pd" id="div_programacao">
+                <div class="header-programacao">
+                    <h1> Programação </h1>
+                </div>
+                <div class="cronograma">
+                    <ul class="nav nav-tabs">
+                        <li class="active col-md-2 no-pd"><a data-toggle="tab" href="#home">23/10 Terça-feira</a></li>
+                        <li class="col-md-2 no-pd"><a data-toggle="tab" href="#menu1">24/10 Quarta-feira</a></li>
+                        <li class="col-md-2 no-pd"><a data-toggle="tab" href="#menu2">25/10 Quinta-feira</a></li>
+                        <li class="col-md-3 no-pd"><a data-toggle="tab" href="#menu3">26/10 Sexta-feira</a></li>
+                        <li class="col-md-3 no-pd"><a data-toggle="tab" href="#menu4">27/10 Sábado</a></li>
+                    </ul>
+
+                    <div class="tab-content col-md-12 no-pd conteudo">
+                        <div id="home" class="tab-pane fade in active">
+                            <div class="col-md-12 card-cronograma">
+                                <span class="col-md-10 no-pd">Palestra 1 - A Definir(Lab x) </span>
+                                <span class="col-md-2 no-pd text-muted" style="text-align: right">13:30 - 15:00</span>
+                            </div>
+
+                            <div class="col-md-12 card-cronograma">
+                                <span class="col-md-10 no-pd">Palestra 2 - A Definir(Lab x) </span>
+                                <span class="col-md-2 no-pd text-muted" style="text-align: right">13:30 - 15:00</span>
+                            </div>
+
+                            <div class="col-md-12 card-cronograma">
+                                <span class="col-md-10 no-pd">
+                                    <span class="text-muted" id="verMais3">Conversaremos um pouco sobre o cenário de e-commerce e números do primeiro semestre/2018 e <a  style="cursor: pointer" onclick="verMais(3)">...</a></span>
+                                    <br/>Palestrante: Armando Leite, Local: Auditório
+                                </span>
+                                <span class="col-md-2 no-pd text-muted" style="text-align: right">19:00 - 20:15</span>
+                            </div>
+
+                            <div class="col-md-12 card-cronograma">
+                                <span class="col-md-10 no-pd">
+                                    <span class="text-muted" id="verMais4">Com os últimos avanços da área de inteligência artificial, muitos termos ficaram em evidência <a  style="cursor: pointer" onclick="verMais(4)">...</a> 
+                                    </span>
+                                    <br/>Palestrante: Daniel Theisges dos Santos, Local: Auditório
+                                </span>
+                                <span class="col-md-2 no-pd text-muted" style="text-align: right">20:45 - 22:00</span>
+                            </div>
+
+                        </div>
+
+                        <div id="menu1" class="tab-pane">
+                            <div class="col-md-12 card-cronograma">
+                                <span class="col-md-10 no-pd" onclick="info(1)">Oficina Install Fest Linux - Kleyton (Lab 6)
+                                    <span class=" col-md-12 no-pd text-muted" style="font-size: 14px;display: none" id="info_1">Oficina voltada para usuários com pouca experiência em Linux, onde usuários mais experientes auxiliam com a instalação e configuração do sistema operacional.</span>
+                                </span>
+                                <span class="col-md-2 no-pd text-muted" style="text-align: right">14:00 - 17:00</span>
+                            </div>
+
+                            <div class="col-md-12 card-cronograma">
+                                <span class="col-md-10 no-pd" onclick="info(2)">Oficina de Embarcadero - Lucas José Pereira (Lab de Redes)
+                                    <span class=" col-md-12 no-pd text-muted" style="font-size: 14px;display: none" id="info_2">Oficina voltada para programadores que nunca tiveram contato com o ambiente de desencolvimento Embarcadero/Delphi. O objetivo é o desenvolvimento de um pequeno aplicativo.</span>
+                                </span>
+                                <span class="col-md-2 no-pd text-muted" style="text-align: right">14:00 - 17:00</span>
+                            </div>
+
+                            <div class="col-md-12 card-cronograma">
+                                <span class="col-md-10 no-pd" onclick="info(3)">Oficina de Arduino básico - Nathan (Lab 2) 
+                                    <span class=" col-md-12 no-pd text-muted" style="font-size: 14px;display: none" id="info_3">Nesse minicurso será apresentada a plataforma Arduino, integração de circuitos com a plataforma Arduino, e criação e desenvolvimento de soluções utilizando essa plataforma.</span>
+                                </span>
+                                <span class="col-md-2 no-pd text-muted" style="text-align: right">14:00 - 17:00</span>
+                            </div>
+
+                            <div class="col-md-12 card-cronograma">
+                                <span class="col-md-10 no-pd" onclick="info(4)">Oficina Install Fest Linux - Kleyton (Lab 6) 
+                                    <span class=" col-md-12 no-pd text-muted" style="font-size: 14px;display: none" id="info_4">Oficina voltada para usuários com pouca experiência em Linux, onde usuários mais experientes auxiliam com a instalação e configuração do sistema operacional.</span>
+                                </span>
+                                <span class="col-md-2 no-pd text-muted" style="text-align: right">19:00 - 22:00</span>
+                            </div>
+
+                            <div class="col-md-12 card-cronograma">
+                                <span class="col-md-10 no-pd" onclick="info(5)">Oficina Android Básico - Ewerton Pontini (Lab 7)
+                                    <span class=" col-md-12 no-pd text-muted" style="font-size: 14px;display: none" id="info_5">Oficina voltada a comunidade externa e interna para incentivar o estudo de programação por meio de atividade prática na construção de aplicativos para Android. Esta oficina abordará aspectos básicos e introdutórios no desenvolvimento.</span>
+                                </span>
+                                <span class="col-md-2 no-pd text-muted" style="text-align: right">19:00 - 22:00</span>
+                            </div>
+                            
+                            <div class="col-md-12 card-cronograma">
+                                <span class="col-md-10 no-pd" onclick="info(6)">Oficina de Arduino básico - Nathan (Lab 2) 
+                                    <span class=" col-md-12 no-pd text-muted" style="font-size: 14px;display: none" id="info_6">Nesse minicurso será apresentada a plataforma Arduino, integração de circuitos com a plataforma Arduino, e criação e desenvolvimento de soluções utilizando essa plataforma.</span>
+                                </span>
+                                <span class="col-md-2 no-pd text-muted" style="text-align: right">19:00 - 22:00</span>
+                            </div>
+                            
+                            <div class="col-md-12 card-cronograma">
+                                <span class="col-md-10 no-pd" onclick="info(7)">Oficina Unity - Lucas Arend (Lab 7) 
+                                    <span class=" col-md-12 no-pd text-muted" style="font-size: 14px;display: none" id="info_7"></span>
+                                </span>
+                                <span class="col-md-2 no-pd text-muted" style="text-align: right">19:00 - 22:00</span>
+                            </div>
+
+                        </div>
+
+                        <div id="menu2" class="tab-pane">
+                            <div class="col-md-12 card-cronograma" onclick="info(8)">
+                                <span class="col-md-10 no-pd">Maratona de programação - Curso Superior. Obs. A maratona será realizada na plataforma URI Online Judge - Me. Leonardo Leiria Fernandes (Lab 6)
+                                    <span class=" col-md-12 no-pd text-muted" style="font-size: 14px;display: none" id="info_8">Competição para exercitar nos participantes a criatividade, a capacidade de trabalho em equipe e a habilidade de resolver problemas de informática sob pressão.</span>
+                                </span>
+                                <span class="col-md-2 no-pd text-muted" style="text-align: right">19:00 - 22:00</span>
+                            </div>
+                            
+                            <div class="col-md-12 card-cronograma" onclick="info(9)">
+                                <span class="col-md-10 no-pd">Oficina Arduino Intermediário - A definir (Lab 2) 
+                                    <span class=" col-md-12 no-pd text-muted" style="font-size: 14px;display: none" id="info_9">Nesse minicurso será apresentado como são utilizadas shields e sensores para o Arduino, conceitos básicos sobre eletrônica, e serão desenvolvidas soluções utilizando diferentes sensores/shields.</span>
+                                </span>
+                                <span class="col-md-2 no-pd text-muted" style="text-align: right">19:00 - 22:00</span>
+                            </div>
+                            
+                            <div class="col-md-12 card-cronograma" onclick="info(10)">
+                                <span class="col-md-10 no-pd">Oficina MongoDB - Ramon (Lab 7) 
+                                    <span class=" col-md-12 no-pd text-muted" style="font-size: 14px;display: none" id="info_10">Oficina sobre o MongoDB visando a criarão uma pequena API utilizando Spring Boot integrado com MongoDB.</span>
+                                </span>
+                                <span class="col-md-2 no-pd text-muted" style="text-align: right">19:00 - 22:00</span>
+                            </div>
+                        </div>
+
+                        <div id="menu3" class="tab-pane">
+                            <div class="col-md-12 card-cronograma" onclick="info(11)">
+                                <span class="col-md-10 no-pd">Campeonato jogos eletrônicos - Barbara I2 (Lab 7) 
+                                    <span class=" col-md-12 no-pd text-muted" style="font-size: 14px;display: none" id="info_11">Campeonato de jogos eletrônicos visando a integração dos alunos e membros da comunidade externa</span>
+                                </span>
+                                <span class="col-md-2 no-pd text-muted" style="text-align: right">14:00 - 17:00</span>
+                            </div>
+
+                            <div class="col-md-12 card-cronograma" onclick="info(12)">
+                                <span class="col-md-10 no-pd">Campeonato jogos eletrônicos - Lucas Pedroso Pereira (Lab 7) 
+                                    <span class=" col-md-12 no-pd text-muted" style="font-size: 14px;display: none" id="info_12">Campeonato de jogos eletrônicos visando a integração dos alunos e membros da comunidade externa</span>
+                                </span>
+                                <span class="col-md-2 no-pd text-muted" style="text-align: right">19:00 - 22:00</span>
+                            </div>
+
+                        </div>
+                        
+                        <div id="menu4" class="tab-pane">
+                            <div class="col-md-12 card-cronograma"  onclick="info(13)">
+                                <span class="col-md-10 no-pd">Oficina Android Intermediário - Lucas Barros (Lab 7) 
+                                    <span class=" col-md-12 no-pd text-muted" style="font-size: 14px;display: none" id="info_13">Oficina voltada a comunidade externa e interna para incentivar o estudo de programação por meio de atividade prática na construção de aplicativos para Android. Esta oficina abordará aspectos básicos e intermediários no desenvolvimento.</span>
+                                </span>
+                                <span class="col-md-2 no-pd text-muted" style="text-align: right">08:00 - 17:20</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+             <div class="programacao col-md-12 no-pd" id="div_galeria">
+                <div class="header-programacao">
+                    <h1> Galeria </h1>
+                </div>
+                 
+                 <div class="col-md-12" id="galeriaFotos">
+                 </div>
+                
+            </div>
+            
+            <div class="local col-md-12 no-pd" id="div_local">
+                <div class="col-md-12 no-pd">
+                    <iframe  class="mapa col-md-12 no-pd" src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d113871.34818570293!2d-49.12285860550783!3d-26.888269232255745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d-26.8774776!2d-49.1014786!4m5!1s0x94df2235f78da08b%3A0x9e47c90966bb3895!2sifsc+gaspar!3m2!1d-26.900784599999998!2d-49.0038309!5e0!3m2!1spt-BR!2sbr!4v1537979275279"frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="col-md-12 no-pd local-descricao" style="text-align: center; ">
+
+                    <div class="col-md-12 no-pd" style="margin-top: 10px">
+                        <i class="glyphicon glyphicon-map-marker"></i>
+                        <span> R. Adriano Korman, 456 - Bela Vista, Gaspar - SC, 89110-971 </span>
+                    </div>
+
+                    <div class="col-md-12 no-pd" >
+                        <i class="glyphicon glyphicon-earphone"></i>
+                        <span> (47) 3318-3700 </span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
