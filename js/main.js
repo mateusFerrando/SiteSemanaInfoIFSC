@@ -5,7 +5,6 @@ window.onload = function(){
     $('.efeito-texto-1').removeClass('efeito-texto-1');
     $('.efeito-texto-2').removeClass('efeito-texto-2');
     
-    inseriImagem(0);
 };
 function rolar_para(elemento) {
 	$('html, body').animate({scrollTop: $(elemento).offset().top -=130}, 1000);
@@ -65,4 +64,8 @@ function info(op){
 
 function info(op){
     $("#info_"+op).fadeToggle("slow");
+};
+
+function infoPalestra(op){
+    $("#palestra_"+op).fadeToggle("slow");
 };
