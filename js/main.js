@@ -66,25 +66,3 @@ function info(op){
 function info(op){
     $("#info_"+op).fadeToggle("slow");
 };
-
-function inseriImagem(index){
-    var diretorio = "img/galeria/"+index+".png";
-    var image = new Image();
-    image.src = diretorio;
-    image.height = 350;
-    image.width = 450;
-    
-    image.onload = function() {
-        var divGaleria = document.createElement("div");
-        divGaleria.className= 'col-md-3 center-badge';
-        divGaleria.style ='padding-bottom:10px';
-        divGaleria.appendChild(image);
-        document.getElementById("galeriaFotos").appendChild(divGaleria);
-        index++;
-        inseriImagem(index);
-    };
-    
-    image.onerror = function(e) {
-       
-    };
-}
